@@ -13,7 +13,7 @@ camera.attachControl(canvas, true);
 const light = new HemisphericLight("light", new Vector3(0, 1, 0), scene);
 
 // Ground + Box
-MeshBuilder.CreateGround("ground", { width: 6, height: 6 }, scene);
+MeshBuilder.CreateGround("ground", { width: 10000, height: 6 }, scene);
 MeshBuilder.CreateBox("box", { size: 12 }, scene);
 
 engine.runRenderLoop(() => {

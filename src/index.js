@@ -36,7 +36,7 @@ light.intensity = 0.7;
 const material = new GridMaterial("grid", scene);
 
 // Our built-in 'sphere' shape.
-const sphere = CreateSphere("sphere1", { segments: 16, diameter: 2 }, scene);
+const sphere = CreateSphere("sphere1", { segments: 16, diameter: 1 }, scene);
 
 // Move the sphere upward 1/2 its height
 sphere.position.y = 2;
@@ -45,7 +45,7 @@ sphere.position.y = 2;
 sphere.material = material;
 
 // Our built-in 'ground' shape.
-const ground = CreateGround("ground1", { width: 6, height: 6, subdivisions: 2 }, scene);
+const ground = CreateGround("ground1", { width: 12, height: 12, subdivisions: 2 }, scene);
 
 // Affect a material
 ground.material = material;
