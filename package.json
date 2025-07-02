@@ -1,0 +1,24 @@
+{
+  "name": "babylon",
+  "version": "1.0.0",
+  "main": "babylon.js",
+  "mode":"development",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babylonjs/core": "^8.14.1",
+    "@babylonjs/inspector": "^8.14.1",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
+  },
+  "dependencies": {
+    "@babylonjs/materials": "^8.14.1",
+    "babylonjs-materials": "^8.14.1"
+  }
+}
