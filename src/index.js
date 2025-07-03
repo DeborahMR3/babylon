@@ -8,6 +8,9 @@ import { Scene } from "@babylonjs/core/scene.js";
 
 import { GridMaterial } from "@babylonjs/materials/grid/gridMaterial.js";
 
+import "@babylonjs/loaders";
+import { ImportMeshAsync, SceneLoader } from "@babylonjs/core";
+
 // Get the canvas element from the DOM.
 const canvas = document.getElementById("renderCanvas");
 
@@ -45,7 +48,11 @@ sphere.position.y = 2;
 sphere.material = material;
 
 // Our built-in 'ground' shape.
-const ground = CreateGround("ground1", { width: 12, height: 12, subdivisions: 2 }, scene);
+const ground = CreateGround(
+  "ground1",
+  { width: 12, height: 12, subdivisions: 2 },
+  scene
+);
 
 // Affect a material
 ground.material = material;
@@ -54,3 +61,9 @@ ground.material = material;
 engine.runRenderLoop(() => {
   scene.render();
 });
+
+//SceneLoader.ImportMesh("", "./models/", "IVAR.glb", scene);
+
+const ivarShelf = ImportMeshAsync("./models/IVAR.glb", scene);
+
+//ivarShelf.Vector3.position

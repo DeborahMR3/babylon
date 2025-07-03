@@ -2,7 +2,7 @@
   "name": "babylon",
   "version": "1.0.0",
   "main": "babylon.js",
-  "mode":"development",
+  "mode": "development",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
@@ -13,6 +13,7 @@
   "devDependencies": {
     "@babylonjs/core": "^8.14.1",
     "@babylonjs/inspector": "^8.14.1",
+    "@babylonjs/loaders": "^8.15.0",
     "webpack": "^5.99.9",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.2"
